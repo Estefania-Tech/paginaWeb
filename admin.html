@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestión de Biblioteca</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="Index.html" style="text-decoration: none; color: white;">
+      <button class="logout">Cerrar Sesión</button>
+    </a>
+      <img src="usuario.png" alt="Administrador" class="user-icon">
+      
+    </header>
+
+    <div class="actions">
+      <a href="formUser.html" style="text-decoration: none;">
+        <button> Añadir Usuario </button>
+      </a>
+      <a href="formBook.html" style="text-decoration: none;">
+        <button> Añadir Libro </button>
+      </a>
+      <button> Eliminar Libro </button>
+    </div>
+
+    <div class="stats">
+      <div class="stat">
+        <p>Total Libros</p>
+        <div class="number">2</div>
+      </div>
+      <div class="stat">
+        <p>Libros Prestados</p>
+        <div class="number">2</div>
+      </div>
+    </div>
+
+    <div class="queries">
+      <button>Consultar Libro</button>
+      <button>Consultar Usuario</button>
+    </div>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Cod</th>
+          <th>Libro</th>
+          <th>Fecha Límite</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>001</td>
+          <td>Cien Años de Soledad</td>
+          <td>23 / Noviembre / 24</td>
+        </tr>
+        <tr>
+          <td>002</td>
+          <td>Romeo y Julieta</td>
+          <td class="overdue">17 / Noviembre / 24</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
